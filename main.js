@@ -385,7 +385,7 @@ function handleFileUpload(files, uploadintent) {
     let imageType = files[0].name.split(".");
     
     /** error messages */
-    if(extensionTypes.indexOf(imageType[imageType.length - 1]) < 0) {
+    if(extensionTypes.indexOf(imageType[imageType.length - 1].toLowerCase()) < 0) {
         new Notification(`.${imageType[imageType.length - 1]} is an invalid file type. Accepted file types: jpg, jpeg, png`, "error");
         return;
     } 

@@ -349,10 +349,13 @@
                             </div>
                         </div>
 
-                        <label for=""><small>Maintain aspect ratio ?</small></label>
-                        <input type="checkbox" checked class="checkbox-switch" name="maintain_aspect_ratio">
+                        <label class="switch">
+                            <small class="switch-label-text">Maintain aspect ratio ?</small>
+                            <input type="checkbox" checked class="checkbox-switch" name="maintain_aspect_ratio">
+                            <span class="switch-slider"></span>
+                        </label>
 
-                        <small class="text--right aspect-ratio-disclaimer">*An appropriate aspect ratio is still applied even if you untick the box*</small>
+                        <!-- <small class="text--right aspect-ratio-disclaimer">*An appropriate aspect ratio is still applied even if you untick the box*</small> -->
                         
                         <button id="resizeSubmit" class="btn btn--block btn--primary-color-lite btn--disabled" type="submit">Resize</button>
                     </div>

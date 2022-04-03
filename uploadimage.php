@@ -155,7 +155,7 @@
 
                 $resizedImagePath = $resizedImageFolder . DIRECTORY_SEPARATOR .time(). $this->imageName . "-resized." . $this->imageExtension;
 
-                $this->Image->resizeImage((int)$newWidth, (int)$newHeight, Imagick::FILTER_LANCZOS, 0.9, true);
+                $this->Image->resizeImage((int)$newWidth, (int)$newHeight, Imagick::FILTER_LANCZOS, 0.9, false);
                 $this->Image->writeImage($resizedImagePath);
                 $downloadlinkarray = explode(DIRECTORY_SEPARATOR, $resizedImagePath);
 
